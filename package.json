@@ -50,14 +50,17 @@
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-webpack": "^1.7.0",
     "ng-annotate-webpack-plugin": "^0.1.2",
+    "node-sass": "^3.3.2",
     "phantomjs": "^1.9.18",
     "webpack": "^1.12.0"
   },
   "scripts": {
-    "build": "npm run build:js && npm run build:js-min",
+    "prebuild": "mkdir -p dist",
+    "build": "npm run build:js && npm run build:js-min && build:css",
     "prebuild:js": "jscs ./src",
     "build:js": "webpack --devtool inline-source-map src/index.js dist/mi-angular-bootstrap-ultron.js",
     "build:js-min": "webpack -p --config webpack.min.config.js src/index.js dist/mi-angular-bootstrap-ultron.min.js",
+    "build:css": "node-sass --output-style=compressed scss/mi-angular-bootstrap-ultron.scss -o dist/",
     "test": "node_modules/karma/bin/karma start karma.config.js"
   }
 }
