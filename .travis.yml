@@ -3,9 +3,6 @@ node_js:
 - '0.10'
 deploy:
   provider: npm
-  email: dasrick@gmail.com
-  api_key:
-    secure: YhT9W2hNnpndDPYMXgvvq3I9tDuFl7pvZHPpp8wjBIRzr2lZ91bYuz3izuXmfz9hFTJTjilms7QNLH7ERN9IWAyl02Fe5j98nIFltOUlmjGHh7xlL1lxL07WHn0SdnMesRooE86EdBMd1hh0kFgegqzZ5bA+tNS0KVaJmXYNqoNFt5KJO3rySfOPwnLVs96ckRRXumV1nc497X88UGIRQ2gDPjoS3ESst2MXFw0V5hek6nTqU9BDMoJZhpG95CKP7YzdMT1j23T2tHyGkfJAC9FPx8OP4ho9yBzaqkWFqdQ8kgBcv0rw/hfNwVPDvful4GpxXHAHBXsL2jnBi2kTAFRgv5P4yOkf6HFNUd2w0+alzBmb4j+NhJxTGL7gr0eqCtEFfUyI09BJHXnlt+xRnn2PHipr4dccoJNtW+ZADDMd1szPdu8clmnivPzvrYaF2OVGDtTlLJ4ef7hL+6qk6jcjIBsmx47/spvkQ9X9I9AA8qaFoGI2rvYxjSJvLltWpLQG8HGwJDi/Rnih5GH975Rss6jW1jEOjM8vuFh4JELkXhpPYpLXJkt+/U7w7yT3z+D4QLRsyJjEnpAJ5K8J7crdNVC7GcpjrZZNWfwWQ87+ght61ZBLvxOBXYSWi8CLVUUPd3AiE29o3RDJ/yi8lDpdnQIroOrqD+URh4iaiZA=
   on:
     tags: true
     repo: MovingImage24/mi-angular-bootstrap-ultron
