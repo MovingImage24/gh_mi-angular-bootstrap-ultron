@@ -63,7 +63,9 @@
     "prebuild:js": "jscs ./src",
     "build:js": "webpack --devtool inline-source-map src/index.js dist/mi-angular-bootstrap-ultron.js",
     "build:js-min": "webpack -p --config webpack.min.config.js src/index.js dist/mi-angular-bootstrap-ultron.min.js",
-    "build:css": "lessc --autoprefix='last 2 versions,ie 9' less/mi-angular-bootstrap-ultron.less > dist/mi-angular-bootstrap-ultron.css && cleancss --source-map -o dist/mi-angular-bootstrap-ultron.min.css dist/mi-angular-bootstrap-ultron.css",
+    "build:css": "npm run build:css-bootstrap && npm run build:css-ultron",
+    "build:css-bootstrap": "lessc --autoprefix='last 2 versions,ie 9' less/mi-angular-bootstrap.less > dist/mi-angular-bootstrap.css && cleancss --source-map -o dist/mi-angular-bootstrap.min.css dist/mi-angular-bootstrap.css",
+    "build:css-ultron": "lessc --autoprefix='last 2 versions,ie 9' less/mi-angular-bootstrap-ultron.less > dist/mi-angular-bootstrap-ultron.css && cleancss --source-map -o dist/mi-angular-bootstrap-ultron.min.css dist/mi-angular-bootstrap-ultron.css",
     "test": "node_modules/karma/bin/karma start karma.config.js"
   }
 }
