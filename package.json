@@ -1,0 +1,41 @@
+{
+  "name": "mi-angular-bootstrap-ultron",
+  "version": "0.0.0",
+  "description": "Native AngularJS (Angular) directives for customized (mi24) bootstrap",
+  "author": {
+    "name": "MovingIMAGE24",
+    "url": "http://www.movingimage24.com/"
+  },
+  "contributors": [
+    {
+      "name": "Enrico Hoffmann",
+      "email": "dasrick@gmail.com"
+    },
+    {
+      "name": "Alexander Miehe",
+      "email": "alexander.miehe@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MovingImage24/mi-angular-bootstrap-ultron.git"
+  },
+  "keywords": [
+    "angularjs",
+    "resource builder"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MovingImage24/mi-angular-bootstrap-ultron/issues"
+  },
+  "homepage": "https://github.com/MovingImage24/mi-angular-bootstrap-ultron#readme",
+  "main": "dist/mi-angular-bootstrap-ultron.js",
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "devDependencies": {
+    "david": "^6.2.0"
+  },
+  "scripts": {
+  }
+}
