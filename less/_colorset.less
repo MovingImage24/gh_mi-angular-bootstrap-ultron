@@ -1,0 +1,218 @@
+// =====================================================================================================================
+// Colors
+// =====================================================================================================================
+// !!! Only define color settings ... otherwise you will notice that broken fingers let you hack a liitle bit slower
+// ---------------------------------------------------------------------------------------------------------------------
+
+.cs-1 {
+  .getColorSetDefaults(cs1);
+  //.getColorSetSections(cs1);
+  //.getColorSetLists(cs1);
+  //.getColorSetButtonMi24(cs1)
+}
+
+.cs-2 {
+  .getColorSetDefaults(cs2);
+  //.getColorSetSections(cs2);
+  //.getColorSetLists(cs2);
+  //.getColorSetButtonMi24(cs2)
+}
+
+.cs-3 {
+  .getColorSetDefaults(cs3);
+  //.getColorSetSections(cs3);
+  //.getColorSetLists(cs3);
+  //.getColorSetButtonMi24(cs3)
+}
+
+//.getColorSetAsides();
+
+header {
+  &.cs-1 {
+    //.getColorSetHeader(cs1);
+  }
+  &.cs-2 {
+    //.getColorSetHeader(cs2);
+  }
+  &.cs-3 {
+    //.getColorSetHeader(cs3);
+  }
+}
+
+//main {
+//  > aside {
+//    &.sidebar {}
+//    &.mainview {}
+//    &.detailview {
+//      border-left-color: @cs1-border-vertical-color;
+//    }
+//  }
+//}
+
+.defineColorSetVars(@colorSetString) {
+  @colorSet-color: '@{colorSetString}-color';
+  @colorSet-bg: '@{colorSetString}-bg';
+  @colorSet-link-color: '@{colorSetString}-link-color';
+  @colorSet-link-hover-color: '@{colorSetString}-link-hover-color';
+  @colorSet-link-active-color: '@{colorSetString}-link-active-color';
+  @colorSet-link-bg: '@{colorSetString}-link-bg';
+  @colorSet-link-hover-bg: '@{colorSetString}-link-hover-bg';
+  @colorSet-link-active-bg: '@{colorSetString}-link-active-bg';
+  @colorSet-heading-link-color: '@{colorSetString}-heading-link-color';
+  @colorSet-heading-link-hover-color: '@{colorSetString}-heading-link-hover-color';
+  @colorSet-heading-link-active-color: '@{colorSetString}-heading-link-active-color';
+  @colorSet-section-head-bg: '@{colorSetString}-section-head-bg';
+  @colorSet-section-foot-bg: '@{colorSetString}-section-foot-bg';
+  @colorSet-border-horizontal-color: '@{colorSetString}-border-horizontal-color';
+  @colorSet-border-vertical-color: '@{colorSetString}-border-vertical-color';
+}
+
+.getColorSetDefaults(@colorSetString) {
+  .defineColorSetVars(@colorSetString);
+  color: @@colorSet-color;
+  background-color: @@colorSet-bg;
+  .getLinkColors(@@colorSet-link-color, @@colorSet-link-hover-color, @@colorSet-link-active-color, @@colorSet-link-active-color);
+  /* START - overwrite some TB standards */
+//  .nav .open>a,
+//  .nav .open>a:hover {
+//    color: @gray-dark;
+//    background-color: @component-active-color;
+//  }
+//  .dropdown-menu>li>a {
+//    color: @gray-dark;
+//    &:hover,
+//    &:focus {
+//      text-decoration: none;
+//      color: @component-active-color;
+//      background-color: @component-active-bg;
+//    }
+//  }
+//  // Active state
+//  .dropdown-menu > .active > a {
+//    &,
+//    &:hover,
+//    &:focus {
+//      color: @gray-dark;
+//      text-decoration: none;
+//      outline: 0;
+//      background-color: lighten(@dropdown-link-active-bg, 20%);
+//    }
+//  }
+//
+//  // Disabled state
+//  //
+//  // Gray out text and ensure the hover/focus state remains gray
+//
+//  .dropdown-menu > .disabled > a {
+//    &,
+//    &:hover,
+//    &:focus {
+//      color: @dropdown-link-disabled-color;
+//    }
+//
+//    // Nuke hover/focus effects
+//    &:hover,
+//    &:focus {
+//      text-decoration: none;
+////      background-color: @dropdown-link-hover-bg;
+//      background-color: transparent;
+//      background-image: none; // Remove CSS gradient
+//      filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+//      cursor: @cursor-disabled;
+//    }
+//  }
+  /* END - overwrite some TB standards */
+}
+
+//.getColorSetAsides() {
+//  main.cs-1 aside, main aside.cs-1 {
+//    &.col-left {
+//      border-right: @col-left-border-right-width solid @cs1-border-vertical-color;
+//    }
+//    &.col-right {
+//      border-left: @col-right-border-left-width solid @cs1-border-vertical-color;
+//    }
+//  }
+//  main.cs-2 aside, main aside.cs-2 {
+//    &.col-left {
+//      border-right: @col-left-border-right-width solid @cs2-border-vertical-color;
+//    }
+//    &.col-right {
+//      border-left: @col-right-border-left-width solid @cs2-border-vertical-color;
+//    }
+//  }
+//  main.cs-3 aside, main aside.cs-3 {
+//    &.col-left {
+//      border-right: @col-left-border-right-width solid @cs3-border-vertical-color;
+//    }
+//    &.col-right {
+//      border-left: @col-right-border-left-width solid @cs3-border-vertical-color;
+//    }
+//  }
+//}
+
+//.getColorSetSections(@colorSetString) {
+//  .defineColorSetVars(@colorSetString);
+//  section.section-head {
+//    background-color: @@colorSet-section-head-bg;
+//    border-bottom-color: @@colorSet-border-horizontal-color;
+//  }
+//  section.section-foot {
+//    background-color: @@colorSet-section-foot-bg;
+//    border-top-color: @@colorSet-border-horizontal-color;
+//  }
+//}
+
+//.getColorSetLists(@colorSetString) {
+//  .defineColorSetVars(@colorSetString);
+////  a {
+////    .getLinkTagExcludeColors(@@colorSet-link-color, @@colorSet-link-hover-color, @@colorSet-link-active-color);
+////    &.heading {
+////      .getLinkTagExcludeColors(@@colorSet-heading-link-color, @@colorSet-heading-link-hover-color, @@colorSet-heading-link-active-color);
+////    }
+////  }
+//  .level-list {
+//    > li {
+//      > ul {
+//        > li {
+//          border-bottom: 1px solid @@colorSet-section-head-bg;
+//          &:first-child {
+//            border-top: 1px solid @@colorSet-section-head-bg;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//.getColorSetHeader(@colorSetString) {
+//  .defineColorSetVars(@colorSetString);
+//  border-bottom-color: @@colorSet-border-horizontal-color;
+//  .getLinkColors(@@colorSet-link-color, @@colorSet-link-hover-color, @@colorSet-link-active-color, @@colorSet-link-color);
+//  .getLinkBgColors(@@colorSet-link-bg, @@colorSet-link-hover-bg, @@colorSet-link-active-bg, @@colorSet-link-bg);
+//}
+//
+//
+//.getColorSetButtonMi24(@colorSetString) {
+//  .defineColorSetVars(@colorSetString);
+////  border-bottom-color: @@colorSet-border-horizontal-color;
+//
+////  .btn-mi24.btn-default {
+////    .button-variant-mi24(@btn-default-color; @btn-default-bg; @btn-default-border; inherit);
+////  }
+////  .btn-mi24.btn-primary {
+////    .button-variant-mi24(@btn-primary-color; @btn-primary-bg; @btn-primary-border; inherit);
+////  }
+////  .btn-mi24.btn-warning {
+////    .button-variant-mi24(@btn-warning-color; @btn-warning-bg; @btn-warning-border; @@colorSet-color);
+////  }
+////  .btn-mi24.btn-danger {
+////    .button-variant-mi24(@btn-danger-color; @btn-danger-bg; @btn-danger-border; @@colorSet-color);
+////  }
+////  .btn-mi24.btn-success {
+////    .button-variant-mi24(@btn-success-color; @btn-success-bg; @btn-success-border; @@colorSet-color);
+////  }
+////  .btn-mi24.btn-info {
+////    .button-variant-mi24(@btn-info-color; @btn-info-bg; @btn-info-border; @@colorSet-color);
+////  }
+//}

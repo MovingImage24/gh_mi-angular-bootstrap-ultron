@@ -1,0 +1,121 @@
+// =====================================================================================================================
+// Layout
+// =====================================================================================================================
+// !!! Only define height and width ... otherwise you will notice that broken fingers let you hack a liitle bit slower
+// ---------------------------------------------------------------------------------------------------------------------
+html, body {
+  height: 100%;
+}
+
+header,
+main {
+  > aside {
+    &.sidebar {
+    }
+    &.content {
+    }
+  }
+}
+
+header {
+  position: relative;
+  height: @header-height;
+  border-bottom-width: @header-border-bottom-width;
+  > aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    &.sidebar {
+    }
+    &.content {
+    }
+  }
+}
+
+main {
+  box-sizing: border-box;
+  height: 100%;
+  > aside {
+    position: absolute;
+    top: @header-height;
+    bottom: @footer-height;
+    overflow: hidden;
+    &.sidebar {
+    }
+    &.content {
+    }
+  }
+}
+
+.col-right,
+.col-main {
+  position: absolute;
+  padding-top: @basic-padding;
+  padding-bottom: @basic-padding;
+  padding-right: @basic-padding;
+  height: 100%;
+}
+
+.col-right {
+  right: 0;
+}
+
+.col-main {
+  left: 0;
+  padding-left: @basic-padding;
+}
+
+.col-right:empty + .col-main,
+.col-main:first-child {
+  right: 0;
+}
+
+// =====================================================================================================================
+// mixins
+// ---------------------------------------------------------------------------------------------------------------------
+.getAsideWidth(@sidebar-width) {
+  header,
+  main {
+    > aside {
+      &.sidebar {
+        width: @sidebar-width;
+        left: 0;
+      }
+      &.content {
+        left: @sidebar-width;
+        right: 0;
+        height: 100%;
+        &:first-child {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.getColWidth(@col-right-width) {
+  .col-main {
+    right: @col-right-width;
+  }
+  .col-right {
+    width: @col-right-width;
+  }
+}
+
+// =====================================================================================================================
+// media queries
+// ---------------------------------------------------------------------------------------------------------------------
+@media (min-width: 768px) {
+  .getAsideWidth(@sidebar-sm-width);
+  .getColWidth(@col-right-sm-width);
+}
+
+@media (min-width: 992px) {
+  .getAsideWidth(@sidebar-md-width);
+  .getColWidth(@col-right-md-width);
+}
+
+@media (min-width: 1200px) {
+  .getAsideWidth(@sidebar-lg-width);
+  .getColWidth(@col-right-lg-width);
+}

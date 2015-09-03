@@ -1,1 +1,175 @@
-body{background-color:#eEeeee}
+html,
+body {
+  height: 100%;
+}
+header {
+  position: relative;
+  height: 50px;
+  border-bottom-width: 1px;
+}
+header > aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+main {
+  box-sizing: border-box;
+  height: 100%;
+}
+main > aside {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  overflow: hidden;
+}
+.col-right,
+.col-main {
+  position: absolute;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+.col-right {
+  right: 0;
+}
+.col-main {
+  left: 0;
+  padding-left: 15px;
+}
+.col-right:empty + .col-main,
+.col-main:first-child {
+  right: 0;
+}
+@media (min-width: 768px) {
+  header > aside.sidebar,
+  main > aside.sidebar {
+    width: 200px;
+    left: 0;
+  }
+  header > aside.content,
+  main > aside.content {
+    left: 200px;
+    right: 0;
+    height: 100%;
+  }
+  header > aside.content:first-child,
+  main > aside.content:first-child {
+    left: 0;
+  }
+  .col-main {
+    right: 200px;
+  }
+  .col-right {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  header > aside.sidebar,
+  main > aside.sidebar {
+    width: 210px;
+    left: 0;
+  }
+  header > aside.content,
+  main > aside.content {
+    left: 210px;
+    right: 0;
+    height: 100%;
+  }
+  header > aside.content:first-child,
+  main > aside.content:first-child {
+    left: 0;
+  }
+  .col-main {
+    right: 210px;
+  }
+  .col-right {
+    width: 210px;
+  }
+}
+@media (min-width: 1200px) {
+  header > aside.sidebar,
+  main > aside.sidebar {
+    width: 220px;
+    left: 0;
+  }
+  header > aside.content,
+  main > aside.content {
+    left: 220px;
+    right: 0;
+    height: 100%;
+  }
+  header > aside.content:first-child,
+  main > aside.content:first-child {
+    left: 0;
+  }
+  .col-main {
+    right: 220px;
+  }
+  .col-right {
+    width: 220px;
+  }
+}
+.cs-1 {
+  color: #333333;
+  background-color: #f5f5f5;
+  /* START - overwrite some TB standards */
+  /* END - overwrite some TB standards */
+}
+.cs-1 a {
+  color: #444444;
+}
+.cs-1 a:hover {
+  color: #222222;
+}
+.cs-1 a:focus {
+  color: #000000;
+}
+.cs-1 a:active {
+  color: #000000;
+}
+.cs-2 {
+  color: #333333;
+  background-color: #ffffff;
+  /* START - overwrite some TB standards */
+  /* END - overwrite some TB standards */
+}
+.cs-2 a {
+  color: #dddddd;
+}
+.cs-2 a:hover {
+  color: #eeeeee;
+}
+.cs-2 a:focus {
+  color: #ffffff;
+}
+.cs-2 a:active {
+  color: #ffffff;
+}
+.cs-3 {
+  color: #ffffff;
+  background-color: #009339;
+  /* START - overwrite some TB standards */
+  /* END - overwrite some TB standards */
+}
+.cs-3 a {
+  color: #ffffff;
+}
+.cs-3 a:hover {
+  color: #ffffff;
+}
+.cs-3 a:focus {
+  color: #333333;
+}
+.cs-3 a:active {
+  color: #333333;
+}
+.sidebar {
+  border-width: 0 3px 0 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, #cccccc, rgba(255, 255, 255, 0)) 1 100%;
+}
+header .sidebar {
+  border-image: none;
+  border-color: transparent;
+}

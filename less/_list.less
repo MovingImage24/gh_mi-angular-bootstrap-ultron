@@ -1,0 +1,65 @@
+.level-list {
+  li {
+    .heading,
+    .item {
+      padding: 10px 15px;
+      display: block;
+      .badge,
+      .control   {
+        float: right;
+        text-align: right;
+      }
+      .badge {
+        font-weight: 300;
+      }
+    }
+    .item > .fa {
+      margin-right: .5em;
+    }
+  }
+
+//  > li {
+//    > .heading {
+//      font-size: 0.9em;
+//      .title {
+//        text-transform: uppercase;
+//        font-weight: 600;
+//      }
+//      .hint {
+//        font-weight: 300;
+//        color: transparent;
+//      }
+//      &:hover {
+//        .hint {
+//          color: inherit;
+//        }
+//      }
+//    }
+//    > ul {
+//      > li {
+//        > a {
+//          font-weight: 300;
+//          font-size: 1.1em;
+//        }
+//      }
+//    }
+//  }
+}
+
+.level-list {
+  li {
+    a {
+      color: #878787;
+      background-color: #ffffff;
+      &:hover {
+        color: #383838;
+        background-color: #ffffff;
+      }
+      &.selected,
+      &.selected:hover {
+        color: #383838;
+        background-color: #f9f9f9;
+      }
+    }
+  }
+}
