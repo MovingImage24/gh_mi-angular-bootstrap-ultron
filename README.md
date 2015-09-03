@@ -1,6 +1,6 @@
 # mi-angular-bootstrap-ultron
 
-[![GitHub release](https://img.shields.io/github/release/mi-angular-bootstrap-ultron.svg)](https://github.com/MovingImage24/mi-angular-bootstrap-ultron)
+[![GitHub tag](https://img.shields.io/github/tag/MovingImage24/mi-angular-bootstrap-ultron.svg)](https://github.com/MovingImage24/mi-angular-bootstrap-ultron)
 [![npm version](https://img.shields.io/npm/v/mi-angular-bootstrap-ultron.svg)](https://www.npmjs.com/package/mi-angular-bootstrap-ultron)
 [![npm downloads](https://img.shields.io/npm/dm/mi-angular-bootstrap-ultron.svg)](https://www.npmjs.com/package/mi-angular-bootstrap-ultron)
 [![Build Status](https://travis-ci.org/MovingImage24/mi-angular-bootstrap-ultron.svg?branch=master)](https://travis-ci.org/MovingImage24/mi-angular-bootstrap-ultron)
