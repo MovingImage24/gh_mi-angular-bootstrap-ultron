@@ -1,2 +1,3 @@
 # mi-angular-bootstrap-ultron
-Native AngularJS (Angular) directives for customized (mi24) bootstrap.
+
+> Native AngularJS (Angular) directives for customized (mi24) bootstrap.
