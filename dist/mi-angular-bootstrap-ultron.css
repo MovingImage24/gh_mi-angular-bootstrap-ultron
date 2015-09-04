@@ -14,7 +14,7 @@ header > aside {
 }
 main {
   box-sizing: border-box;
-  height: 100%;
+  height: calc(100% - 50px);
 }
 main > aside {
   position: absolute;
@@ -51,7 +51,6 @@ main > aside {
   main > aside.content {
     left: 200px;
     right: 0;
-    height: 100%;
   }
   header > aside.content:first-child,
   main > aside.content:first-child {
@@ -74,7 +73,6 @@ main > aside {
   main > aside.content {
     left: 210px;
     right: 0;
-    height: 100%;
   }
   header > aside.content:first-child,
   main > aside.content:first-child {
@@ -97,7 +95,6 @@ main > aside {
   main > aside.content {
     left: 220px;
     right: 0;
-    height: 100%;
   }
   header > aside.content:first-child,
   main > aside.content:first-child {
@@ -163,6 +160,66 @@ main > aside {
 }
 .cs-3 a:active {
   color: #333333;
+}
+.box-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  color: #aaaaaa;
+  font-weight: 300;
+}
+.box-outer .box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.box-outer .box-inner .box-content {
+  text-align: center;
+}
+.box-outer .box-inner .box-content > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.box-outer .box-inner .box-content i.headline {
+  font-size: 250px;
+  color: #cccccc;
+}
+.box-outer .box-inner .box-content h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.box-outer .box-inner .box-content p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.box-outer .box-inner .box-content .alert-info {
+  text-align: left;
+  color: #aaaaaa;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.box-outer .box-inner .box-content .alert-info p {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.box-outer .box-inner .box-content .alert-info ul {
+  padding-left: 1.2em;
+}
+.box-outer .box-inner .box-content .fill {
+  color: #333333;
+  background-color: #ffffff;
+  padding: 35px 40px;
+  text-align: left;
+  box-shadow: 0 2px 4px #b3b3b3;
+  font-weight: 400;
+}
+.box-outer .box-inner .box-content .fill form h3 {
+  font-weight: 400;
+}
+.box-outer .box-inner .box-content .fill form label {
+  font-weight: 400;
 }
 .sidebar {
   border-width: 0 3px 0 0;

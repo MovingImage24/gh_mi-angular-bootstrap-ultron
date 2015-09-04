@@ -43,13 +43,11 @@
         }
       }
       .fill {
-        //color: @basic-color;
-        color: #333;
-        //background-color: @basic-bg;
-        background-color: #fff;
+        color: @cs2-color;
+        background-color: @cs2-bg;
         padding: 35px 40px;
         text-align: left;
-        box-shadow: 0 2px 4px #666;
+        box-shadow: 0 2px 4px lighten(@cs2-color, 50%);
         font-weight: 400;
         form {
           h3 {
