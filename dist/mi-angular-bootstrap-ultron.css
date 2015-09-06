@@ -221,6 +221,13 @@ main > aside {
 .box-outer .box-inner .box-content .fill form label {
   font-weight: 400;
 }
+.navbar-right {
+  margin-right: 0;
+}
+.navbar-brand {
+  width: 100%;
+  text-align: center;
+}
 .sidebar {
   border-width: 0 3px 0 0;
   border-style: solid;
