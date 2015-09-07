@@ -122,9 +122,6 @@ main > aside {
 .cs-1 a:focus {
   color: #000000;
 }
-.cs-1 a:active {
-  color: #000000;
-}
 .cs-1 .nav > li > a:hover,
 .cs-1 .nav > li > a:focus {
   color: #222222;
@@ -145,9 +142,6 @@ main > aside {
 .cs-2 a:focus {
   color: #ffffff;
 }
-.cs-2 a:active {
-  color: #ffffff;
-}
 .cs-2 .nav > li > a:hover,
 .cs-2 .nav > li > a:focus {
   color: #eeeeee;
@@ -166,10 +160,7 @@ main > aside {
   color: #ffffff;
 }
 .cs-3 a:focus {
-  color: #333333;
-}
-.cs-3 a:active {
-  color: #333333;
+  color: #eeeeee;
 }
 .cs-3 .nav > li > a:hover,
 .cs-3 .nav > li > a:focus {
