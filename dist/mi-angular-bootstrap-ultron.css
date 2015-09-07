@@ -4,7 +4,7 @@ body {
 }
 header {
   position: relative;
-  height: 50px;
+  height: 51px;
   border-bottom-width: 1px;
 }
 header > aside {
@@ -14,7 +14,7 @@ header > aside {
 }
 main {
   box-sizing: border-box;
-  height: calc(100% - 50px);
+  height: calc(100% - 51px);
 }
 main > aside {
   position: absolute;
@@ -125,6 +125,11 @@ main > aside {
 .cs-1 a:active {
   color: #000000;
 }
+.cs-1 .nav > li > a:hover,
+.cs-1 .nav > li > a:focus {
+  color: #222222;
+  background-color: transparent;
+}
 .cs-2 {
   color: #333333;
   background-color: #ffffff;
@@ -143,6 +148,11 @@ main > aside {
 .cs-2 a:active {
   color: #ffffff;
 }
+.cs-2 .nav > li > a:hover,
+.cs-2 .nav > li > a:focus {
+  color: #eeeeee;
+  background-color: transparent;
+}
 .cs-3 {
   color: #ffffff;
   background-color: #009339;
@@ -160,6 +170,25 @@ main > aside {
 }
 .cs-3 a:active {
   color: #333333;
+}
+.cs-3 .nav > li > a:hover,
+.cs-3 .nav > li > a:focus {
+  color: #ffffff;
+  background-color: #009d3d;
+}
+* {
+  border: 0 solid transparent;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  outline-offset: 0;
+}
+.navbar-right {
+  margin-right: 0;
 }
 .box-outer {
   display: table;

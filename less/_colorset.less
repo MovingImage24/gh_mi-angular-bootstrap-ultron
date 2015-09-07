@@ -73,6 +73,36 @@ header {
   background-color: @@colorSet-bg;
   .getLinkColors(@@colorSet-link-color, @@colorSet-link-hover-color, @@colorSet-link-active-color, @@colorSet-link-active-color);
   /* START - overwrite some TB standards */
+  .nav {
+    > li {
+      > a {
+        &:hover,
+        &:focus {
+          color: @@colorSet-link-hover-color;
+          background-color: @@colorSet-link-hover-bg;
+        }
+      }
+      &.disabled > a {
+        //color: @nav-disabled-link-color;
+        &:hover,
+        &:focus {
+          //color: @nav-disabled-link-hover-color;
+          //background-color: transparent;
+          //cursor: @cursor-disabled;
+        }
+      }
+    }
+    .open > a {
+      &,
+      &:hover,
+      &:focus {
+        //background-color: @nav-link-hover-bg;
+        //border-color: @link-color;
+      }
+    }
+  }
+
+
 //  .nav .open>a,
 //  .nav .open>a:hover {
 //    color: @gray-dark;

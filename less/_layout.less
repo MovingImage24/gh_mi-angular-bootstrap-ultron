@@ -19,7 +19,7 @@ main {
 
 header {
   position: relative;
-  height: @header-height;
+  height: @header-height + @header-border-bottom-width;
   border-bottom-width: @header-border-bottom-width;
   > aside {
     position: absolute;
@@ -34,7 +34,7 @@ header {
 
 main {
   box-sizing: border-box;
-  height: calc(~"100%" - (@header-height + @footer-height));  // calc needs to be escaped because of less ...
+  height: calc(~"100%" - (@header-height + @footer-height + @header-border-bottom-width + @footer-border-top-width));  // calc needs to be escaped because of less ...
   > aside {
     position: absolute;
     top: @header-height;
