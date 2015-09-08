@@ -22,7 +22,8 @@
   },
   "keywords": [
     "angularjs",
-    "resource builder"
+    "bootstrap",
+    "directive"
   ],
   "license": {
     "type": "MIT",
