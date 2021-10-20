@@ -1,3 +1,7 @@
+### This repository is deprecated!
+
+### The relevant repository can be found here [mi-angular-bootstrap-ultron](https://github.com/movingimage-evp/mi-angular-bootstrap-ultron)
+
 # mi-angular-bootstrap-ultron
 
 [![GitHub tag](https://img.shields.io/github/tag/MovingImage24/mi-angular-bootstrap-ultron.svg)](https://github.com/MovingImage24/mi-angular-bootstrap-ultron)
